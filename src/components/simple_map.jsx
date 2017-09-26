@@ -10,6 +10,7 @@ class SimpleMap extends Component {
       lat: this.props.flat.lat,
       lng: this.props.flat.lng
     }
+
     return (
       <div className="map-container">
         <GoogleMapReact
