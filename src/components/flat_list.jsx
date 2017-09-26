@@ -7,11 +7,13 @@ const FlatList = (props) => {
     return props.flats.map((flat) => {
       return (
         <Flat
-          key={flat.name}
+          key={flat.lat}
           name={flat.name}
           price={flat.price}
           priceCurrency={flat.priceCurrency}
           imageUrl={flat.imageUrl}
+          lat={flat.lat}
+          lng={flat.lng}
         />
       )
     })
