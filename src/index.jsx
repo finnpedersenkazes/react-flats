@@ -4,10 +4,13 @@ import ReactDOM from 'react-dom';
 
 // internal modules
 import '../assets/stylesheets/application.scss';
+import App from './components/app';
 
 
 // A simple example of a functional component
-const Hello = props => <h1>Hello, {props.name}</h1>;
+// const Hello = props => <h1>Hello, {props.name}</h1>;
 
 // render an instance of the component in the DOM
-ReactDOM.render(<Hello name="Boris" />, document.querySelector('.container'));
+// ReactDOM.render(<Hello name="Boris" />, document.querySelector('.container'));
+
+ReactDOM.render(<App />, document.querySelector('.container'));
