@@ -8,12 +8,8 @@ const FlatList = (props) => {
       return (
         <Flat
           key={flat.lat}
-          name={flat.name}
-          price={flat.price}
-          priceCurrency={flat.priceCurrency}
-          imageUrl={flat.imageUrl}
-          lat={flat.lat}
-          lng={flat.lng}
+          flat={flat}
+          handleClick={props.handleClick}
         />
       )
     })

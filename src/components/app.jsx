@@ -12,10 +12,16 @@ class App extends Component {
     };
   }
 
+  handleClick = (flat) => {
+    this.setState({
+      selectedFlat: flat
+    });
+  }
+
   render() {
     return (
       <div>
-        <FlatList flats={this.state.flats} />
+        <FlatList flats={this.state.flats} handleClick={this.handleClick} />
         <SimpleMap flat={this.state.selectedFlat} />
       </div>
     );
